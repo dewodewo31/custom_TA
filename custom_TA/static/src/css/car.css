@@ -1,0 +1,33 @@
+/* Import Open Sans dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+.jumbotron {
+  height: 650px;
+  background-image: url("/custom_TA/static/src/img/car/car-card.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron .content {
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.jumbotron p {
+  font-size: 1.5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  margin-bottom: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}

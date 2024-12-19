@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "Muneo Sans";
+  src: url("/custom_TA/static/src/font/MuseoSans_500.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.all-height {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* Custom Carousel Indicators */
+.custom-indicators button {
+  width: 150px !important; /* Panjang setiap indikator */
+  height: 10px; /* Tinggi indikator */
+  border-radius: 5px; /* Membuat indikator berbentuk oval */
+  background-color: rgba(0, 0, 0, 0.5); /* Warna dasar */
+  border: none; /* Hilangkan border */
+  transition: background-color 0.3s ease; /* Animasi saat perubahan */
+}
+
+.custom-indicators button.active {
+  background-color: #000; /* Warna hitam untuk indikator aktif */
+}
+.jbc {
+  height: 700px !important;
+}
+
+/* Style the grid-introduce class */
+.grid-introduce {
+  padding-left: 0; /* Remove default left padding */
+}
+
+.grid-introduce li {
+  position: relative;
+  padding-left: 40px; /* Add space for custom bullet */
+  font-size: 16px; /* Set text font size */
+  line-height: 1.5; /* Set line height for better vertical alignment */
+  list-style-type: none; /* Remove default list marker */
+}
+
+.grid-introduce li p {
+  display: inline-block; /* Prevent the <p> from affecting the layout */
+  margin: 60px; /* Remove any default margin from <p> */
+  line-height: 1.5; /* Adjust the line height */
+}
+
+.grid-introduce li::before {
+  content: "\2022"; /* Unicode bullet character */
+  font-size: 250px; /* Set bullet size to 250px */
+  position: absolute;
+  left: 0; /* Position the bullet to the left */
+  top: 42%; /* Align bullet vertically with the center */
+  transform: translateY(-50%); /* Fine-tune to center the bullet */
+  color: black; /* Set bullet color */
+}
+/* General styling */
+.container-card {
+  gap: 20px;
+  padding: 40px 0;
+}
+
+/* Card styling */
+.card {
+  width: 300px;
+  height: 400px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay styling */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay h3 {
+  margin: 0 0 10px 0;
+}
+
+.card-overlay p {
+  margin-bottom: 15px;
+}
+
+.card-overlay button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-overlay button:hover {
+  background: dodgerblue;
+  color: white;
+}
+/* Target hanya carousel dengan class carousel-zoom */
+.carousel-zoom .carousel-item {
+  transform: scale(0.9) translateX(100%);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease;
+  will-change: transform, opacity; /* Optimization for smoother transitions */
+}
+
+.carousel-zoom .carousel-item.active {
+  transform: scale(1) translateX(0);
+  opacity: 1;
+}
+
+/* <car sect> */
+.jumbotron-car {
+  height: 650px;
+  background-image: url("/custom_TA/static/src/img/car/car-card.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: flex-end; /* Membuat konten di bagian bawah */
+  justify-content: center; /* Membuat konten di tengah secara horizontal */
+  padding-bottom: 2rem; /* Memberikan jarak dari bawah */
+}
+
+.jumbotron-car .content {
+  text-align: center;
+}
+
+.jumbotron-car h1 {
+  font-size: 9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Memberikan sedikit jarak dari paragraf */
+  font-family: "Muneo Sans", sans-serif;
+}
+
+.jumbotron-car p {
+  font-size: 1.5rem;
+  margin: 0; /* Hilangkan margin default */
+  font-family: "Muneo Sans", sans-serif;
+  max-width: 800px; /* Batasi lebar maksimum paragraf */
+  line-height: 1.6;
+}
+/* car page */
+/* Mengatur margin, padding, dan box-sizing untuk semua elemen di dalam .contain-swiper-car */
+.contain-swiper-car * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Menghindari styling body di dalam .contain-swiper-car */
+.service-title {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 25px !important;
+}
+.slider-container {
+  height: 500px;
+  overflow: hidden;
+}
+
+.slide {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  transition: flex 0.3s ease-in-out;
+}
+
+.slide:hover {
+  flex: 3; /* Membesar slide saat hover */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 300px;
+  padding: 20px;
+  justify-content: start;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  text-align: left;
+}
+
+.slide:hover .text-block {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+}
+/* marquee car page */
+
+#jeff {
+  height: 400px;
+
+  overflow: hidden;
+}
+
+.row {
+  height: 50%;
+  width: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack {
+  height: 100%;
+  width: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: toTheLeft 30s infinite linear;
+  z-index: -2;
+}
+
+img {
+  height: 90px;
+  width: 90px;
+  margin: 20px;
+}
+
+.reverse {
+  animation: toTheRight 30s infinite linear;
+}
+
+@keyframes toTheLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes toTheRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* Container map agar memenuhi layar */
+#map {
+  height: auto; /* Full height sesuai viewport */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Tengah secara horizontal */
+  border: 2px solid #f2f2f2; /* Opsional: Memberikan border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opsional: Efek bayangan */
+}
+
+/* Jika ada tambahan container */
+
+/* <HE sect> */
+/* jb he */
+.jumbotron-he {
+  height: 650px;
+  background-image: url("/custom_TA/static/src/img/home/he-card.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: flex-end; /* Membuat konten di bagian bawah */
+  justify-content: start; /* Membuat konten di tengah sehea horizontal */
+  padding-bottom: 2rem; /* Memberikan jarak dari bawah */
+}
+
+.jumbotron-he .content {
+  text-align: left;
+  padding-left: 15vh;
+}
+
+.jumbotron-he h1 {
+  font-size: 9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Memberikan sedikit jarak dari paragraf */
+  font-family: "Muneo Sans", sans-serif;
+}
+.jumbotron-he p {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0; /* Hilangkan margin default */
+  font-family: "Muneo Sans", sans-serif;
+  max-width: 1200px; /* Batasi lebar maksimum paragraf */
+  line-height: 1.6;
+}
+
+/* testi */
+.testimonial-carousel .card-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.client-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.rating span {
+  color: #f8c146;
+  font-size: 1.2rem;
+}
+
+.testimonial-comment {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: #5372f0;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #5372f0;
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #5372f0;
+}

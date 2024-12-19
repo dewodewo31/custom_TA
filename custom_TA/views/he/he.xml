@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="he_template" name="Heavy Equipment Page">
+    <t t-call="website.layout">
+      <t t-call="custom_TA.assets_css"/>
+      <div class="jumbotron jumbotron-he">
+        <div class="content">
+          <h1>HE</h1>
+          <p>Heavy Equipment</p>
+        </div>
+      </div>
+
+      <div class="container-fluid all-height col-12">
+        <div style="display: flex; height: auto; margin: 0 auto;">
+          <!-- Left Column -->
+          <div style="width: 50%; padding: 20px; box-sizing: border-box; ">
+            <h2 style="font-size: 3rem; font-weight: bold; margin-bottom: 25px; text-align: center;">WHAT IS HE SERVICE?</h2>
+            <p style="font-size: 1rem; margin-bottom: 50px; text-align: left;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, urna eget varius malesuada,turpis nisl tempor arcu, vitae cursus arcu orci a purus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, urna eget varius malesuada,turpis nisl tempor arcu, vitae cursus arcu orci a purus.
+            </p>
+          </div>
+          <!-- Right Column with Image Covering Full Grid Area -->
+          <div style="width: 50%;">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container contain-swiper-he col-12 text-center" style="padding-top: 50px; padding-bottom: 20px;">
+        <h2 class="service-title">OUR SERVICE</h2>
+        <div class="d-flex flex-nowrap slider-container" style="padding: 100px;">
+          <div class="slide flex-shrink-1">
+            <img src="/custom_TA/static/src/img/he/arrow-slider.png" alt="Slide Image" class="img-fluid"/>
+            <div class="text-block">
+              <h3>Slide #1 is here</h3>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            </div>
+          </div>
+          <div class="slide flex-shrink-1">
+            <img src="/custom_TA/static/src/img/he/arrow-slider.png" alt="Slide Image" class="img-fluid"/>
+            <div class="text-block">
+              <h3>Slide #2 is here</h3>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            </div>
+          </div>
+          <div class="slide flex-shrink-1">
+            <img src="/custom_TA/static/src/img/he/arrow-slider.png" alt="Slide Image" class="img-fluid"/>
+            <div class="text-block">
+              <h3>Slide #3 is here</h3>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-4 col-12 text-center client">
+        <h1 style="font-weight: bold;">OUR CLIENT</h1>
+        <div id="jeff">
+
+          <div class="row">
+            <div class="stack">
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-01.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-02.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-03.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-04.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-05.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-06.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-07.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-08.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="stack reverse">
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-01.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-02.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-03.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-04.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-05.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-06.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-07.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+              <img t-att-src="'/custom_TA/static/src/img/company/Client-08.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain;" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid col-12 text-center">
+        <h1 style="font-weight: bold;">OUR LOCATIONS</h1>
+        <div class="col-12 mt-4">
+          <img class="m-0" style="width: 100%; height: auto;" src="/custom_TA/static/src/img/he/maps.png" alt="Trinity Maps Coverage"/>
+        </div>
+      </div>
+
+
+      <div class="container swiper testimonial-carousel">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <!-- Testimonial Item -->
+            <li class="card-item swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client Photo" class="client-photo"/>
+                <p class="client-name">John Doe</p>
+                <div class="rating">
+                  <span>★★★★★</span>
+                </div>
+                <p class="testimonial-comment">"Great service! The team was professional and attentive to our needs. Highly recommended."</p>
+              </div>
+            </li>
+
+            <!-- Add more testimonial items -->
+            <li class="card-item swiper-slide">
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client Photo" class="client-photo"/>
+                <p class="client-name">Jane Smith</p>
+                <div class="rating">
+                  <span>★★★★☆</span>
+                </div>
+                <p class="testimonial-comment">"The project was completed on time and exceeded our expectations. Thank you!"</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Navigation -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div id="customCarouselEnd" class="carousel slide carousel-zoom" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators custom-indicators">
+          <button type="button" data-bs-target="#customCarouselEnd" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#customCarouselEnd" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#customCarouselEnd" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+
+        <!-- Inner -->
+        <div class="carousel-inner" style="background-color: #d3d3d3; height: 500px;">
+          <!-- Slide 1 -->
+          <div class="carousel-item active d-flex flex-column justify-content-center align-items-start text-start ps-5" style="height: 100%; background-image: url('/custom_TA/static/src/img/home/jb-slider-1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            <span style="font-weight: bold; font-size: 90px; color: #fff">CAR</span>
+            <p style="width: 60%; margin-top: 20px; color: #fff">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, urna eget varius malesuada, turpis nisl tempor arcu.
+            </p>
+            <a href="#" style="display: inline-block; padding: 15px 40px; background-color: #FF0000; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px;">
+                            LEARN MORE
+            </a>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item d-flex flex-column justify-content-center align-items-start text-start ps-5" style="height: 100%; background-image: url('/custom_TA/static/src/img/home/jb-slider-2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            <span style="font-weight: bold; font-size: 90px; color: #fff">HE</span>
+            <p style="width: 60%; margin-top: 20px; color: #fff">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, urna eget varius malesuada, turpis nisl tempor arcu.
+            </p>
+            <a href="#" style="display: inline-block; padding: 15px 40px; background-color: #FF0000; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px;">
+                            LEARN MORE
+            </a>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item d-flex flex-column justify-content-center align-items-start text-start ps-5" style="height: 100%; background-image: url('/custom_TA/static/src/img/home/jb-slider-3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            <span style="font-weight: bold; font-size: 90px; color: #fff">ULIN</span>
+            <p style="width: 60%; margin-top: 20px; color: #fff">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, urna eget varius malesuada, turpis nisl tempor arcu.
+            </p>
+            <a href="#" style="display: inline-block; padding: 15px 40px; background-color: #FF0000; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px;">
+                            LEARN MORE
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel wrapper -->
+
+
+
+      <t t-call="custom_TA.assets_js"/>
+    </t>
+
+
+  </template>
+
+  <record id="action_he_page" model="ir.actions.act_url">
+    <field name="name">Heavy Equipment Page</field>
+    <field name="url">/he_page</field>
+    <field name="target">self</field>
+  </record>
+
+</odoo>
